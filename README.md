@@ -1,2 +1,5 @@
 # Assignments_46W38
-Module 02 Assignment for Practical Programming for Wind Energy DTU Course
+
+Assignments for the DTU course **46W38 - Practical Programming for Wind Energy**.
+
+**Author:** Sergio Correa
