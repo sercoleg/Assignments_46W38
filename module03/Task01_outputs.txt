@@ -1,0 +1,72 @@
+print(35/2 - (6 - 5*2))
+My Answer: 21.5
+Python Answer: 21.5 
+Observations: CORRECT
+
+print(16/2**2)
+My Answer: 64
+Python Answer: 4.0 
+Observations: INCORRECT
+Power exponent precedes multiplication
+
+print((16/2)**2)
+My Answer: 64
+Python Answer: 64
+Observations: OK - parantheses precedes power exponent
+
+print(17//2**2)
+My Answer: 17
+Python Answer: 4
+Observations: INCORRECT
+// es floor division o división entera hacia abajo
+17//4 = 4.algo = 4
+
+print((17//2)**2)
+My Answer: 64
+Python Answer: 64
+Observations: CORRECT
+
+print(17%4**3)
+My Answer: 174**3
+Python Answer: 17
+Observations: INCORRECT
+% significa modulo o resto de una división. El // da entero, el % da el resto.
+Primero, 17%4**3 = 17%64 
+Segundo 17//64 = 0, entonces como 64 no cabe en 17, quedan 17. Respuesta 17%64 = 17
+
+print((17%4)**3)
+My Answer: 1
+Python Answer: 1
+Observations: CORRECT
+
+print([3, 4] in [1, [3, 4], 'a'])
+My Answer: True
+Python Answer: True
+Observations: CORRECT
+
+print(4 in [1, [3, 4], 'a'])
+My Answer: True
+Python Answer: False
+Observations: INCORRECT
+El in solo busca elementos del primer nivel de la lista. Es decir pregunta 4 == [3,4] # False
+
+print(('w' in 'wt') and (17%3 <= (5 -3)))
+My Answer: True
+Python Answer: True
+Observations: CORRECT
+
+print((3 in (1, (3, 5), 2)) or ('3' not in '358') and (35%4 == 3))
+My Answer: True
+Python Answer: False
+Observations: INCORRECT
+3 in (1, (3, 5), 2) # False. No busca en Tuple
+'3' not in '358' # False, porque '3' in '358' es True. (Aquí me equivoqué, olvidé el not in, y asumí in.
+35%4 == 3 # True
+Entonces queda print( False or False and True)
+El orden de precedencia es not and or
+Entonces queda print (False or False) lo que da False
+
+x = 'ab'; y = x; print(not(x is not y))
+My Answer: True
+Python Answer: True
+Observations: CORRECT
