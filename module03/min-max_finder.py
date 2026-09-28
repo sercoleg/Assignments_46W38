@@ -11,16 +11,6 @@ while True:     # will run always except when breaking it. It will ask for user 
     if userinput == 'end': # In case of end, the input loop will end
         break
 
-    # Error management
-    # In case the user adds not a number nor end, the code has to manage the error code instead of stopping with errors.
-    # Hence, the use of try and except.
-
-    try:
-        n = float(userinput)
-        numbers.append(n)
-    except ValueError:
-        print('Please enter a valid number or end. No other input is allowed')
-
 # ------------
 # Looking for minimal and maximal value in user inputs without using specific functions for this.
 # ------------
