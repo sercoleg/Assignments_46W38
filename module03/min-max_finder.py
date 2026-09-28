@@ -10,6 +10,8 @@ while True:     # will run always except when breaking it. It will ask for user 
     userinput = input('input your number or type: end to finish')
     if userinput == 'end': # In case of end, the input loop will end
         break
+    n = float(userinput)
+    numbers.append(n)
 
 # ------------
 # Looking for minimal and maximal value in user inputs without using specific functions for this.
